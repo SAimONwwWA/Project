@@ -1,0 +1,63 @@
+:root {
+--primary-background: #0b090f;
+--primary-light: #303138;
+--secondary: #d3ccc2;
+--primary-text: #f0e9e9;
+--text: #f9f9f9;
+}
+
+main .container{
+    width: 90vw;
+    margin: 0 auto;
+    position: fixed;
+    background-color: var(--primary-light);
+    height: 70px;
+}
+main .container .navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+main .container .navigation .nav-link{
+    color: var(--primary-text);
+    font-size: 2rem;
+    font-weight: 800;
+    margin-right: 30px ;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 2px solid transparent;
+    padding: 5px;
+}
+main .container .navigation .nav-link:hover {
+    color: var(--secondary);
+    border-bottom: 2px solid var(--primary-text);
+}
+main .wrapper-section{
+    width: 50vw;
+    height: 60vh;
+    background-color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .wrapper-section .wrapper-section_user{
+    width: 80%;
+    border: 2px solid red;
+}
+main .wrapper-section .wrapper-section_photo{
+    margin-top: 70px;
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 20px 0px 20px 0;
+}
+main .wrapper-section .wrapper-section_photo img{
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px 0px 20px 0;
+}
+main .wrapper-section .wrapper-section_info{
+    
+}
