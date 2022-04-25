@@ -1,63 +1,73 @@
-:root {
---primary-background: #0b090f;
---primary-light: #303138;
---secondary: #d3ccc2;
---primary-text: #f0e9e9;
---text: #f9f9f9;
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
 }
-
-main .container{
-    width: 90vw;
-    margin: 0 auto;
-    position: fixed;
-    background-color: var(--primary-light);
-    height: 70px;
+main{
+	background: rgb(230, 197, 11);
+	background: radial-gradient(circle, rgba(26,223,131,0.023144291896446068) 0%, rgba(223,224,64,1) 24%, rgb(88, 29, 29) 68%, rgb(13, 14, 17) 93%);
+	height:100vh;
+	padding:50px;
+	color:whitesmoke;
 }
-main .container .navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.wrapper-card {
+	width:500px;
+	height:700px;
+	margin:100px auto;
+	background:rgb(95, 15, 15);
+	border: 1px solid red;
+	border-radius: 10px;
+	box-shadow: 5px 5px 6px black;
+	border: 2px solid rgb(0, 255, 255);
+	
 }
-main .container .navigation .nav-link{
-    color: var(--primary-text);
-    font-size: 2rem;
-    font-weight: 800;
-    margin-right: 30px ;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    border-bottom: 2px solid transparent;
-    padding: 5px;
+#foto{
+	width:75%;
+	margin:5px 12.5%;
+	align-items: center;
+	border-radius:50%;
+	margin-top:-100px;
+	box-shadow:0px 5px 6px black;
+	border: 2px solid black;
 }
-main .container .navigation .nav-link:hover {
-    color: var(--secondary);
-    border-bottom: 2px solid var(--primary-text);
+.info-card{
+	width:100%;
+	margin: 0 auto;
 }
-main .wrapper-section{
-    width: 50vw;
-    height: 60vh;
-    background-color: var(--secondary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h1{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom:30px;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	font-size: 40px;
+	color: black
 }
-main .wrapper-section .wrapper-section_user{
-    width: 80%;
-    border: 2px solid red;
+.info-card__description,
+.info-card__adress{
+	width:80%;
+	border: 2px solid rgb(253, 253, 253);
+	margin: 0 auto;
+	font-size:10px;
+	font-family: 'Orbitron', sans-serif;
+	line-height: 34px;
 }
-main .wrapper-section .wrapper-section_photo{
-    margin-top: 70px;
-    width: 150px;
-    height: 150px;
-    background-color: aqua;
-    border-radius: 20px 0px 20px 0;
+.info-card__adress{
+	text-align: left;
+	margin: 20px auto;
+	padding-top: 10px;
+	border-top: 2px solid #f8f8f8;
 }
-main .wrapper-section .wrapper-section_photo img{
-    height: 100%;
-    object-fit: contain;
-    border-radius: 20px 0px 20px 0;
+.card-adress__sm{
+	width:50%;
+	margin:0 auto;
+	border: 1px solid rgb(95, 15, 15);
 }
-main .wrapper-section .wrapper-section_info{
-    
+.sm-photo{
+	width:50px;
+}
+header{
+	color:black
+}
+footer{
+	background: radial-gradient(circle, rgb(247, 243, 243) 0%, rgb(13, 170, 218) 24%, rgb(238, 11, 11) 68%, rgb(255, 255, 255) 93%);
 }
